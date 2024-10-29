@@ -1,8 +1,50 @@
+/* Estilização geral da lista */
 .list {
-  display: flex;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #004d99; /* Cor de fundo azul escuro */
+  padding: 15px;
+  margin: 0;
+  border-bottom: 4px solid #ff6600; /* Barra inferior colorida */
 }
 
+/* Estilização dos itens da lista */
 .itens {
-  margin-right: 1em;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Estilização dos links */
+.itens a {
+  text-decoration: none;
+  color: #fff; /* Cor do texto branco */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o link */
+.itens a:hover {
+  background-color: #ff6600; /* Laranja vibrante */
+  color: #004d99; /* Azul escuro */
+}
+
+/* Efeito de foco no link */
+.itens a:focus {
+  outline: 2px solid #fff; /* Borda branca no foco */
+  outline-offset: 2px;
+}
+
+/* Adiciona espaçamento entre os itens para dispositivos móveis */
+@media (max-width: 768px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itens {
+    margin-bottom: 10px;
+  }
 }

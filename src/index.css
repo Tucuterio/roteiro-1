@@ -1,13 +1,14 @@
 body {
   padding: 50px;
   padding-bottom: 50px;
+  background-color: rgb(56, 163, 225);
 }
 
 h1 {
-  color: #333;
+  color: #000000;
 }
 
 p {
-  background-color: #999;
+  background-color: #dbcfcf;
   padding: 10px;
 }

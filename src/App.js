@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -10,16 +9,18 @@ import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/empresa" element={<Empresa />} />
-        <Route path="/contato" element={<Contato />} />
-        <Route path="/calculator" element={<ImcCalculator />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/empresa" element={<Empresa />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/calculator" element={<ImcCalculator />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
